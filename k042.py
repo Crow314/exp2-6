@@ -23,7 +23,7 @@ def main():
 
         for result in results:
             # [author, department, research]
-            outputs.append("{department}, {author}, {research}"
+            outputs.append("{department},{author},{research}"
                            .format(author=result[0], department=result[1], research=result[2]))
 
     with open(os.path.join(path, files[2]), encoding="utf-8", mode="w", newline="\n") as file:
