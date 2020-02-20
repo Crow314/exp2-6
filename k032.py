@@ -24,8 +24,8 @@ def main():
             for line in file:
                 for word in line.split():
                     words.append(word)
-                line.replace(" ", "")
-                line.replace("\n", "")
+                line = line.replace(" ", "")
+                line = line.replace("\n", "")
                 character_count += len(line)
                 line_count += 1
 
