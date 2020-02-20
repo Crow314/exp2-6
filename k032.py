@@ -33,9 +33,9 @@ def main():
         word_count = len(words)
         outputs.append("{0}: {1}文字， {2}語， {3}行".format(file_name, character_count, word_count, line_count))
 
-        with open(os.path.join(path, files[-1]), encoding="utf-8", mode="w", newline="\n") as file:
-            for output in outputs:
-                file.write(output + "\n")
+    with open(os.path.join(path, files[-1]), encoding="utf-8", mode="w", newline="\n") as file:
+        for output in outputs:
+            file.write(output + "\n")
 
 
 if __name__ == '__main__':
